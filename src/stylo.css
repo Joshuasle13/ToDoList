@@ -1,0 +1,17 @@
+
+
+
+#container{
+   border: black solid;
+    justify-content: center;
+    height:30em;
+    
+}
+
+#notebook{
+    border:solid rgb(204, 34, 34);
+    height: inherit;
+    width: inherit;
+  
+    grid-template-columns: repeat(9, 3em);
+}
