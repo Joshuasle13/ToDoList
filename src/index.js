@@ -8,7 +8,8 @@ import  {container,
     savePage,
     deletePage,
     nextPage,
-    backPage}  from "./textAndElements.js"
+    backPage,
+    index}  from "./textAndElements.js"
 
 
 document.body.appendChild(container);
@@ -21,3 +22,4 @@ document.getElementById('notebook').appendChild(savePage);
 document.getElementById('notebook').appendChild(deletePage);
 document.getElementById('notebook').appendChild(nextPage);
 document.getElementById('notebook').appendChild(backPage);
+document.getElementById('notebook').appendChild(index);

@@ -1,17 +1,118 @@
 
-
+body{
+    background-color:rgba(255, 0, 0, 0.301);
+}
 
 #container{
-   border: black solid;
+
     justify-content: center;
     height:30em;
+    display: flex;
+    align-items: center;
     
 }
 
 #notebook{
-    border:solid rgb(204, 34, 34);
-    height: inherit;
-    width: inherit;
-  
-    grid-template-columns: repeat(9, 3em);
+    border:solid black;
+    background-color: rgba(241, 238, 232, 0.733);
+    height: 25em;
+    width: 40em;
+    display: grid;
+    grid-template-columns:repeat(auto,10em);
+    grid-template-rows: repeat(4, 5em);
+}
+
+.projectTitle{
+
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    height: fit-content;
+    grid-column: 1/1;
+    margin-left: 2em;
+    margin-top: 2.5em;
+}
+
+#userText{
+    grid-column: 2/6;
+    grid-row: 2/3;
+    margin-right: 1em;
+    height: 20em;
+    border: black solid 0.15em;
+
+    
+
+}
+
+#userDate{
+    width: 5.5em;
+    height: 1em;
+    grid-column: 1/1;
+    grid-row: 3/3;   
+    margin-top:5em;
+    justify-self: center;
+    border: black solid 0.15em;
+    
+}
+
+#userTitle{
+    width: 10em;
+    height: 1em;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    justify-self: center;
+    border: black solid 0.15em;
+
+}
+
+
+#nextPage{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 1/1;
+    grid-row: 5/5;
+    justify-self: end;
+    align-self: center;
+    margin-right: 2em;
+    font-size: 1.05em;
+    border: black solid 0.15em;
+}
+
+#backPage{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 1/1;
+    grid-row: 5/5;
+    justify-self: start;
+    align-self: center;
+    margin-left: 2em;
+    font-size: 1.05em;
+    border: black solid 0.15em;
+}
+
+#savePage{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 4/4;
+    font-size: 0.9em;
+    margin-top: 1em;
+    border: black solid 0.15em;
+}
+
+#deletePage{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 5/5;
+    font-size: 0.9em;
+    margin-top: 1em;
+    border: black solid 0.15em;
+}
+
+#index{
+    width: fit-content;
+    height: fit-content;
+    grid-column: 2/2;
+    grid-row:1/1;
+    font-size: 0.9em;
+    margin-top: 1em;
+    border: black solid 0.15em;
 }

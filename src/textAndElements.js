@@ -23,6 +23,7 @@ userText.id     =   'userText';
 
 
 
+
 let savePage    =   document.createElement('button');
 savePage.id     =   'savePage';
 savePage.innerText  =   'Save';
@@ -33,11 +34,15 @@ deletePage.innerText    =   'Delete';
 
 let nextPage    =   document.createElement('button');
 nextPage.id     =   'nextPage';
-nextPage.innerText  =   'Next page';
+nextPage.innerText  =   'Next';
 
 let backPage    =   document.createElement('button');
 backPage.id     =   'backPage';
-backPage.innerText  =   'Previous page'
+backPage.innerText  =   'Prev.'
+
+let index       =   document.createElement('button');
+index.id        =   'index';
+index.innerText =   'Index'
 
 
 
@@ -54,5 +59,6 @@ export{
     savePage,
     deletePage,
     nextPage,
-    backPage
+    backPage,
+    index
 }
