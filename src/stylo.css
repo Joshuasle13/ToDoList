@@ -30,6 +30,7 @@ body{
     grid-column: 1/1;
     margin-left: 2em;
     margin-top: 2.5em;
+    border-bottom: solid red;
 }
 
 #userText{
@@ -115,4 +116,14 @@ body{
     font-size: 0.9em;
     margin-top: 1em;
     border: black solid 0.15em;
+}
+
+#inPage{
+    border:solid black;
+    background-color: rgba(241, 238, 232, 0.733);
+    height: 25em;
+    width: 40em;
+    display: grid;
+    grid-template-columns:repeat(auto,10em);
+    grid-template-rows: repeat(4, 5em);
 }

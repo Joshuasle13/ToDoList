@@ -5,11 +5,15 @@ import  {container,
     userTitle,
     userDate,
     userText,
-    savePage,
     deletePage,
     nextPage,
     backPage,
-    index}  from "./textAndElements.js"
+    }  from "./textAndElements.js"
+
+import  {
+        savePage,
+        index
+    }   from './logic.js'
 
 
 document.body.appendChild(container);

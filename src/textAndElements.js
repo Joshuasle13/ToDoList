@@ -42,7 +42,10 @@ backPage.innerText  =   'Prev.'
 
 let index       =   document.createElement('button');
 index.id        =   'index';
-index.innerText =   'Index'
+index.innerText =   'Index';
+
+let inPage      =   document.createElement('div');
+inPage.id       =   'inPage'
 
 
 
@@ -60,5 +63,6 @@ export{
     deletePage,
     nextPage,
     backPage,
-    index
+    index,
+    inPage
 }
