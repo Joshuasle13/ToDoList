@@ -6,13 +6,14 @@ import  {container,
     userDate,
     userText,
     deletePage,
-    nextPage,
-    backPage,
+
+    
+   
     }  from "./textAndElements.js"
 
 import  {
         savePage,
-        index
+        index, backPage
     }   from './logic.js'
 
 
@@ -24,6 +25,4 @@ document.getElementById('notebook').appendChild(userDate);
 document.getElementById('notebook').appendChild(userText);
 document.getElementById('notebook').appendChild(savePage);
 document.getElementById('notebook').appendChild(deletePage);
-document.getElementById('notebook').appendChild(nextPage);
-document.getElementById('notebook').appendChild(backPage);
 document.getElementById('notebook').appendChild(index);
