@@ -24,5 +24,4 @@ document.getElementById('notebook').appendChild(userTitle);
 document.getElementById('notebook').appendChild(userDate);
 document.getElementById('notebook').appendChild(userText);
 document.getElementById('notebook').appendChild(savePage);
-document.getElementById('notebook').appendChild(deletePage);
 document.getElementById('notebook').appendChild(index);

@@ -59,33 +59,18 @@ if( obj.date === ''|| obj.title === ''|| obj.text  === ''){
 
 }
 
-});
 
-index.addEventListener('click', function(){
-    
-   document.getElementById('container').removeChild(notebook);
-   document.getElementById('container').appendChild(inPage);
-   document.getElementById('inPage').appendChild(inContainer)
-   document.getElementById('inContainer').appendChild(inTitle);
-   document.getElementById('inContainer').appendChild(inList);
-   document.getElementById('inContainer').appendChild(backPage)
+let liElement   =   document.createElement('button');
 
-   if(document.getElementById('infoPage')   !== null){
-    document.getElementById('inPage').removeChild(infoPage)
-   }
-  
+inList.appendChild(liElement);
 
-   for(let  i = 0;  i < inStorage.length; ++i){
-
-    
-
-    let liElement   =   document.createElement('button');
+for(let  i = 0;  i < inStorage.length; ++i){
 
    
     liElement.id    =   'liElement'+[i];
     liElement.classList.add('liElClass')
     liElement.innerText =   inStorage[i]
-    document.getElementById('indexList').appendChild(liElement);
+
 
     liElement.addEventListener('click',function(){
         if(liElement.id ===  'liElement'+[i]){
@@ -105,6 +90,27 @@ index.addEventListener('click', function(){
 
    }
 
+
+
+});
+
+index.addEventListener('click', function(){
+    
+   document.getElementById('container').removeChild(notebook);
+   document.getElementById('container').appendChild(inPage);
+   document.getElementById('inPage').appendChild(inContainer)
+   document.getElementById('inContainer').appendChild(inTitle);
+   
+   document.getElementById('inContainer').appendChild(backPage)
+
+   if(document.getElementById('infoPage')   !== null){
+    document.getElementById('inPage').removeChild(infoPage)
+   }
+
+   document.getElementById('inContainer').appendChild(inList);
+   
+
+   
 
 });
 
